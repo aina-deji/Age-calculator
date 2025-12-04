@@ -1,0 +1,117 @@
+
+:root{
+    --bg-clr: #E0E5EC;
+    --main-text-clr: #333333;
+    --accent-clr: #001965;
+    --light-shadow: #FFFFFF; 
+    --dark-shadow: #A7A9AF;
+    --border-radius: 20px;
+}
+
+
+*{
+   font-family: "varela round", sans-serif;
+   font-weight: 00;
+   color: var(--main-text-clr);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--bg-clr); 
+}
+header{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   padding-top: 20px;
+}
+.age-icon{
+   width: 23px;
+   fill: var(--accent-clr); 
+   margin-left: 10px;
+}
+header h1{
+   font-size: 24px;
+   color: var(--accent-clr);
+}
+.main-ctn{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   height: 80vh;
+}
+
+/* --- Output Container (Sunk/Depressed) --- */
+.output-ctn{
+   width: 280px;
+   height: 200px;
+   font-weight: 700;
+   font-size: 1.5rem;
+   box-shadow: inset 5px 5px 10px var(--dark-shadow), inset -5px -5px 10px var(--light-shadow);
+   border-radius: var(--border-radius);
+   display: grid;
+   place-items: center;
+   background: var(--bg-clr);
+}
+.output-holder{
+   width: 260px;
+   height: 180px;
+   /* 3. Raised shadow (outer) */
+   box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+   border-radius: var(--border-radius);
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: var(--bg-clr);
+}
+#age-value {
+    color: var(--accent-clr);
+    /*font-size: 2rem; */
+    margin-top: -10px;
+}
+
+.input-ctn {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#input-field{
+   width: 180px;
+   height: 40px;
+   border-radius: 10px;
+   text-align: center;
+   font-size: 1rem;
+   box-shadow: inset 3px 3px 5px var(--dark-shadow), inset -3px -3px 5px var(--light-shadow);
+   outline-color: var(--accent-clr); 
+   border: none;
+   background: var(--bg-clr);
+}
+#input-field::placeholder {
+    color: var(--main-text-clr);
+    opacity: 0.5;
+}
+
+
+#calculate-btn{
+   padding: 10px 20px; 
+   background: var(--bg-clr);
+   color: var(--accent-clr);
+   font-weight: bold;
+   border-radius: 10px;
+   box-shadow: 3px 3px 6px var(--dark-shadow), -3px -3px 6px var(--light-shadow);
+   border: none;
+   transition: all 0.1s ease;
+}
+#calculate-btn:hover {
+    color: var(--main-text-clr);
+}
+#calculate-btn:active{
+
+   box-shadow: inset 3px 3px 6px var(--dark-shadow), inset -3px -3px 6px var(--light-shadow);
+   transform: translateY(1px);
+}
+
