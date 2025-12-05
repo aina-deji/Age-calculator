@@ -11,7 +11,7 @@
 
 *{
    font-family: "varela round", sans-serif;
-   font-weight: 00;
+   font-weight: 900;
    color: var(--main-text-clr);
 }
 
@@ -26,10 +26,17 @@ header{
    align-items: center; 
    padding-top: 20px;
 }
+.header-title{
+   padding: 5px;
+   border-radius: var(--border-radius);
+   box-shadow: 2px 2px 5px var(--dark-shadow), -2px -2px 5px var(--light-shadow);
+}
 .age-icon{
    width: 23px;
-   fill: var(--accent-clr); 
-   margin-left: 10px;
+   margin-left: 5px;
+   padding: 10px;
+   border-radius: var(--border-radius);
+   box-shadow: 2px 2px 5px var(--dark-shadow), -2px -2px 5px var(--light-shadow);
 }
 header h1{
    font-size: 24px;
